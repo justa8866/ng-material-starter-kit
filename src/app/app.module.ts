@@ -8,6 +8,11 @@ import {CatFactComponentModule} from "./components/cat-fact/cat-fact.component-m
 import { CatServiceModule } from './services/cat.service-module';
 import {AgePredictionComponentModule} from "./components/age-prediction/age-prediction.component-module";
 import {AgeServiceModule} from "./services/age.service-module";
+import {SingleProductComponentModule} from "./components/single-product/single-product.component-module";
+import {SingleProductService} from "./services/single-product.service";
+import {SingleProductServiceModule} from "./services/single-product.service-module";
+import {SingleCartComponentModule} from "./components/single-cart/single-cart.component-module";
+import {SingleCartServiceModule} from "./services/single-cart.service-module";
 
 @NgModule({
   declarations: [
@@ -21,7 +26,11 @@ import {AgeServiceModule} from "./services/age.service-module";
         CatFactComponentModule,
         CatServiceModule,
         AgePredictionComponentModule,
-        AgeServiceModule
+        AgeServiceModule,
+        SingleProductComponentModule,
+        SingleProductServiceModule,
+        SingleCartComponentModule,
+        SingleCartServiceModule
     ],
   providers: [],
   bootstrap: [AppComponent]
