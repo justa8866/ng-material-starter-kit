@@ -13,6 +13,8 @@ import {SingleProductService} from "./services/single-product.service";
 import {SingleProductServiceModule} from "./services/single-product.service-module";
 import {SingleCartComponentModule} from "./components/single-cart/single-cart.component-module";
 import {SingleCartServiceModule} from "./services/single-cart.service-module";
+import {SingleUserComponentModule} from "./components/single-user/single-user.component-module";
+import {SingleUserServiceModule} from "./services/single-user.service-module";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {SingleCartServiceModule} from "./services/single-cart.service-module";
         SingleProductComponentModule,
         SingleProductServiceModule,
         SingleCartComponentModule,
-        SingleCartServiceModule
+        SingleCartServiceModule,
+        SingleUserComponentModule,
+        SingleUserServiceModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

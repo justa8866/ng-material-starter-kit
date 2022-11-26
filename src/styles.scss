@@ -51,3 +51,7 @@ h2 {
   font-weight: bold;
   margin: 0 !important;
 }
+
+h2:first-child {
+  font-weight: bolder;
+}
