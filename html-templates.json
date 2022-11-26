@@ -96,6 +96,11 @@
     "text": {
       "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>",
       "content": "{{ $itemVariable$ }}"
+    },
+    "dog": {
+      "container": "<h1>Random dog image</h1><ng-container *ngIf=\"dog$ | async as dog\"><img [src]=$content$ /></ng-container>",
+      "content": "dog.message"
     }
   }
+
 }

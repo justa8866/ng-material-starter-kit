@@ -15,6 +15,8 @@ import {SingleCartComponentModule} from "./components/single-cart/single-cart.co
 import {SingleCartServiceModule} from "./services/single-cart.service-module";
 import {SingleUserComponentModule} from "./components/single-user/single-user.component-module";
 import {SingleUserServiceModule} from "./services/single-user.service-module";
+import {DogServiceModule} from "./services/dog.service-module";
+import {DogComponentModule} from "./components/dog/dog.component-module";
 
 @NgModule({
   declarations: [
@@ -35,6 +37,9 @@ import {SingleUserServiceModule} from "./services/single-user.service-module";
         SingleCartServiceModule,
         SingleUserComponentModule,
         SingleUserServiceModule,
+        DogServiceModule,
+        DogComponentModule
+
     ],
   providers: [],
   bootstrap: [AppComponent]

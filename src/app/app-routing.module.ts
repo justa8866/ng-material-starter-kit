@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {SingleUserComponentModule} from "./components/single-user/single-user.component-module";
-import {SingleUserComponent} from "./components/single-user/single-user.component";
-import {SingleUserServiceModule} from "./services/single-user.service-module";
+import {DogComponent} from "./components/dog/dog.component";
+import {DogComponentModule} from "./components/dog/dog.component-module";
+import {DogServiceModule} from "./services/dog.service-module";
 
 
 
 @NgModule({
   imports: [RouterModule.forRoot([
     {
-      path: 'users/:id',
-      component: SingleUserComponent,
+      path: 'dog/image/random',
+      component: DogComponent,
     }
-  ]), SingleUserComponentModule, SingleUserServiceModule],
+  ]), DogComponentModule, DogServiceModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
