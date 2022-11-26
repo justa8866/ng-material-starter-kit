@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Age prediction</mat-card-title>
+  </mat-card-header>
+  <mat-card-content *ngIf="age$ | async as age" class="marg">
+    {{ age.age }}
+  </mat-card-content>
+</mat-card>

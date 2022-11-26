@@ -5,7 +5,7 @@ import { CatModel } from '../models/cat.model';
 
 @Injectable()
 export class CatService {
-  private apiUrl: string;
+  private readonly apiUrl: string;
 
   constructor(private _httpClient: HttpClient) {
     this.apiUrl = 'https://catfact.ninja/fact';

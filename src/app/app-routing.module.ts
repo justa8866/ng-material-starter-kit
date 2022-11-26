@@ -1,10 +1,17 @@
-import { APP_BASE_HREF } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { AgePredictionComponent } from './components/age-prediction/age-prediction.component';
+import {AgePredictionComponentModule} from "./components/age-prediction/age-prediction.component-module";
+import {AgeServiceModule} from "./services/age.service-module";
+
 
 @NgModule({
-  imports: [RouterModule.forRoot([])],
+  imports: [RouterModule.forRoot([
+    {
+      path: 'age/:name',
+      component: AgePredictionComponent
+    }
+  ]), AgePredictionComponentModule, AgeServiceModule],
   exports: [RouterModule],
-  providers: [{provide: APP_BASE_HREF, useValue : '/cat-fact' }]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
