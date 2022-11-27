@@ -3,8 +3,8 @@
     Product List
   </mat-card-title>
   <mat-card-content>
-    <mat-list role="list">
-      <mat-list-item role="listitem" *ngFor="let item of all$ | async">{{ item.title }} {{ item.price }}$
+    <mat-list role="list" *ngFor="let item of all$ | async">
+      <mat-list-item role="listitem" >{{ item.title }} {{ item.price }}$
       </mat-list-item>
     </mat-list>
   </mat-card-content>
