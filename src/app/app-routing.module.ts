@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {DogComponent} from "./components/dog/dog.component";
-import {DogComponentModule} from "./components/dog/dog.component-module";
-import {DogServiceModule} from "./services/dog.service-module";
+import {AllProductsComponent} from "./components/all-products/all-products.component";
+import {AllProductsComponentModule} from "./components/all-products/all-products.component-module";
+import {AllProductsServiceModule} from "./services/all-products.service-module";
 
 
 
 @NgModule({
   imports: [RouterModule.forRoot([
     {
-      path: 'dog/image/random',
-      component: DogComponent,
+      path: 'products',
+      component: AllProductsComponent,
     }
-  ]), DogComponentModule, DogServiceModule],
+  ]), AllProductsComponentModule, AllProductsServiceModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

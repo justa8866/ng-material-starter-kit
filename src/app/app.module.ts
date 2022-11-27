@@ -9,7 +9,6 @@ import { CatServiceModule } from './services/cat.service-module';
 import {AgePredictionComponentModule} from "./components/age-prediction/age-prediction.component-module";
 import {AgeServiceModule} from "./services/age.service-module";
 import {SingleProductComponentModule} from "./components/single-product/single-product.component-module";
-import {SingleProductService} from "./services/single-product.service";
 import {SingleProductServiceModule} from "./services/single-product.service-module";
 import {SingleCartComponentModule} from "./components/single-cart/single-cart.component-module";
 import {SingleCartServiceModule} from "./services/single-cart.service-module";
@@ -17,6 +16,9 @@ import {SingleUserComponentModule} from "./components/single-user/single-user.co
 import {SingleUserServiceModule} from "./services/single-user.service-module";
 import {DogServiceModule} from "./services/dog.service-module";
 import {DogComponentModule} from "./components/dog/dog.component-module";
+import {AllProductsComponentModule} from "./components/all-products/all-products.component-module";
+import {AllProductsServiceModule} from "./services/all-products.service-module";
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import {DogComponentModule} from "./components/dog/dog.component-module";
         SingleUserComponentModule,
         SingleUserServiceModule,
         DogServiceModule,
-        DogComponentModule
+        DogComponentModule,
+        AllProductsServiceModule,
+        AllProductsComponentModule
 
     ],
   providers: [],
