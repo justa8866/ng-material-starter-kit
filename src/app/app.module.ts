@@ -18,6 +18,8 @@ import {DogServiceModule} from "./services/dog.service-module";
 import {DogComponentModule} from "./components/dog/dog.component-module";
 import {AllProductsComponentModule} from "./components/all-products/all-products.component-module";
 import {AllProductsServiceModule} from "./services/all-products.service-module";
+import {CryptoServiceModule} from "./services/crypto.service-module";
+import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import {AllProductsServiceModule} from "./services/all-products.service-module";
         DogServiceModule,
         DogComponentModule,
         AllProductsServiceModule,
-        AllProductsComponentModule
+        AllProductsComponentModule,
+        CryptoServiceModule,
+        CryptoComponentModule,
 
     ],
   providers: [],
