@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {ProductTableComponent} from "./components/product-table/product-table.component";
-import {ProductTableComponentModule} from "./components/product-table/product-table.component-module";
-import {ProductTableServiceModule} from "./services/product-table.service-module";
+import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ProductFormComponentModule } from './components/product-form/product-form.component-module';
+import { ProductFormServiceModule } from './services/product-form.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([
-    {
-      path: 'product-search',
-      component: ProductTableComponent,
-    }
-  ]), ProductTableComponentModule, ProductTableServiceModule],
+    { path: 'create-product', component: ProductFormComponent }
+  ]),  ProductFormComponentModule, ProductFormServiceModule],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
