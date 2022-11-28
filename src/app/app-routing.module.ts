@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {CategoriesMenuComponent} from "./components/categories-menu/categories-menu.component";
-import {CategoriesMenuComponentModule} from "./components/categories-menu/categories-menu.component-module";
-import {CategoriesMenuServiceModule} from "./services/categories-menu.service-module";
+import {ProductTableComponent} from "./components/product-table/product-table.component";
+import {ProductTableComponentModule} from "./components/product-table/product-table.component-module";
+import {ProductTableServiceModule} from "./services/product-table.service-module";
 
 @NgModule({
   imports: [RouterModule.forRoot([
     {
-      path: 'categories-menu',
-      component: CategoriesMenuComponent,
+      path: 'product-search',
+      component: ProductTableComponent,
     }
-  ]), CategoriesMenuComponentModule, CategoriesMenuServiceModule],
+  ]), ProductTableComponentModule, ProductTableServiceModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

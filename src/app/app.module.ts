@@ -24,6 +24,8 @@ import {CategoriesCheckboxComponentModule} from "./components/categories-checkbo
 import {CategoriesCheckboxServiceModule} from "./services/categories-checkbox.service-module";
 import {CategoriesMenuServiceModule} from "./services/categories-menu.service-module";
 import {CategoriesMenuComponentModule} from "./components/categories-menu/categories-menu.component-module";
+import {ProductTableServiceModule} from "./services/product-table.service-module";
+import {ProductTableComponentModule} from "./components/product-table/product-table.component-module";
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import {CategoriesMenuComponentModule} from "./components/categories-menu/catego
         CategoriesCheckboxServiceModule,
         CategoriesMenuServiceModule,
         CategoriesMenuComponentModule,
+        ProductTableServiceModule,
+        ProductTableComponentModule,
 
     ],
   providers: [],
