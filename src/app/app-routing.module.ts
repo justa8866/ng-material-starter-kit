@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { LoginComponentModule } from './components/login/login.component-module';
-import { LoginServiceModule } from './services/login.service-module';
+import { ExtendProductComponent } from './components/extend-product/extend-product.component';
+import { ExtendProductComponentModule } from './components/extend-product/extend-product.component-module';
+import { ExtendProductServiceModule } from './services/extend-product.service-module';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot([{ path: 'login', component: LoginComponent }]),
-    LoginComponentModule,
-    LoginServiceModule,
+    RouterModule.forRoot([
+      { path: 'create-product', component: ExtendProductComponent },
+    ]),
+    ExtendProductComponentModule,
+    ExtendProductServiceModule,
   ],
   exports: [RouterModule],
 })
