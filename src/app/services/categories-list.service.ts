@@ -5,7 +5,7 @@ import {CategoriesListModel} from "../models/categories-list.model";
 
 @Injectable()
 export class CategoriesListService {
-  private apiKey: string;
+  private readonly apiKey: string;
 
   constructor(private _httpClient: HttpClient) {
     this.apiKey = 'https://fakestoreapi.com/products/categories';
