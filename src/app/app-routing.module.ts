@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { EmployeeFormComponent } from './components/employee-form/employee-form.component';
-import { EmployeeFormComponentModule } from './components/employee-form/employee-form.component-module';
-import { EmployeeFormServiceModule } from './services/employee-form.service-module';
+import { LoginComponent } from './components/login/login.component';
+import { LoginComponentModule } from './components/login/login.component-module';
+import { LoginServiceModule } from './services/login.service-module';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot([
-      { path: 'create-employee', component: EmployeeFormComponent },
-    ]),
-    EmployeeFormComponentModule,
-    EmployeeFormServiceModule,
+    RouterModule.forRoot([{ path: 'login', component: LoginComponent }]),
+    LoginComponentModule,
+    LoginServiceModule,
   ],
   exports: [RouterModule],
 })
