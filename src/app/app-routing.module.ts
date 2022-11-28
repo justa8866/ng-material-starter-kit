@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {CryptoComponent} from "./components/crypto/crypto.component";
-import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
-import {CryptoServiceModule} from "./services/crypto.service-module";
+
+import {HolidaysComponent} from "./components/holidays/holidays.component";
+import {HolidaysServiceModule} from "./services/holidays.service-module";
+import {HolidaysComponentModule} from "./components/holidays/holidays.component-module";
 
 @NgModule({
   imports: [RouterModule.forRoot([
     {
-      path: 'crypto',
-      component: CryptoComponent,
+      path: 'public-holidays',
+      component: HolidaysComponent,
     }
-  ]), CryptoComponentModule, CryptoServiceModule],
+  ]), HolidaysComponentModule, HolidaysServiceModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
