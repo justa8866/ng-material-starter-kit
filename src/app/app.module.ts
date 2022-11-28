@@ -22,6 +22,8 @@ import {CryptoServiceModule} from "./services/crypto.service-module";
 import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
 import {CategoriesCheckboxComponentModule} from "./components/categories-checkbox/categories-checkbox.component-module";
 import {CategoriesCheckboxServiceModule} from "./services/categories-checkbox.service-module";
+import {CategoriesMenuServiceModule} from "./services/categories-menu.service-module";
+import {CategoriesMenuComponentModule} from "./components/categories-menu/categories-menu.component-module";
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import {CategoriesCheckboxServiceModule} from "./services/categories-checkbox.se
         CryptoComponentModule,
         CategoriesCheckboxComponentModule,
         CategoriesCheckboxServiceModule,
+        CategoriesMenuServiceModule,
+        CategoriesMenuComponentModule,
 
     ],
   providers: [],

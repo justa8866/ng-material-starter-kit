@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {CategoriesCheckboxComponent} from "./components/categories-checkbox/categories-checkbox.component";
-import {CategoriesCheckboxComponentModule} from "./components/categories-checkbox/categories-checkbox.component-module";
-import {CategoriesCheckboxServiceModule} from "./services/categories-checkbox.service-module";
+import {CategoriesMenuComponent} from "./components/categories-menu/categories-menu.component";
+import {CategoriesMenuComponentModule} from "./components/categories-menu/categories-menu.component-module";
+import {CategoriesMenuServiceModule} from "./services/categories-menu.service-module";
 
 @NgModule({
   imports: [RouterModule.forRoot([
     {
-      path: 'checkbox-categories',
-      component: CategoriesCheckboxComponent,
+      path: 'categories-menu',
+      component: CategoriesMenuComponent,
     }
-  ]), CategoriesCheckboxComponentModule, CategoriesCheckboxServiceModule],
+  ]), CategoriesMenuComponentModule, CategoriesMenuServiceModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
